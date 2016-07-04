@@ -1,0 +1,26 @@
+<section ng-controller="mainPage">
+  <form ng-submit="crearIngrediente(nuevo_ingrediente)">
+    <input ng-model="nuevo_ingrediente.supermercado" type="text" placeholder="supermercado">
+    <input ng-model="nuevo_ingrediente.descripcion" type="text" placeholder="descripcion">
+    <input ng-model="nuevo_ingrediente.precio" type="number" placeholder="precio">
+    <input ng-model="nuevo_ingrediente.peso" type="number" placeholder="peso">
+    <input ng-model="nuevo_ingrediente.unidades" type="number" placeholder="unidades">
+    <button type="submit">
+      crear
+    </button>
+
+  </form>
+
+  <input class = "buscador" type="text" placeholder="Buscar cualquier campo" ng-model="query">
+  <div class="container">
+    <div class="elemento-ingrediente" ng-repeat="ingrediente in ingredientes | filter:query">
+      <span class="alineado">{{ingrediente.precio}}</span>
+      <span class="alineado">{{ingrediente.descripcion}}</span>
+      <span class="alineado">{{ingrediente.supermercado}}</span>
+      <span class="alineado">{{ingrediente.peso}}</span>
+      <span class="alineado">{{ingrediente.unidades}}</span>
+    </div>
+  </div>     <!-- para hacer el buscador -->
+
+
+</section>

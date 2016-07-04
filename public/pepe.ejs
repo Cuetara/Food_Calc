@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type = "text/css" rel="stylesheet" href="/css/proyectoCSS.css">
+  <title><%=name%> </title>
+</head>
+
+<body>
+  <header id = "mipagina"> Mi pagina </header>
+  <div id = "encabezado">
+    <p class = "alineado"> <a href = "https://www.takatick.com"> &nbsp &nbsp&nbsp  Blog &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp </a> </p>
+    <p class = "alineado"> <a href = "https://www.takatick.com"> <%=name%>   &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp</p>
+    <p class = "alineado"> <a href = "https://www.takatick.com"> <%=age%></p>
+    <div id = "cuadro_redes">
+          <a href = "https://www.facebook.com">
+            <img id = "img" class="redes" src="https://static.wixstatic.com/media/6c710e2ad2a7fed7d72be87bc5e7f7f8.png/v1/fill/w_30,h_30,al_c,usm_0.66_1.00_0.01/6c710e2ad2a7fed7d72be87bc5e7f7f8.png"/>
+          </a>
+          <a href = "https://www.instagram.com">
+            <img id = "img" class="redes" src="https://static.wixstatic.com/media/92b798c32b2d61ae63a6a18a363cf316.png/v1/fill/w_30,h_30,al_c,usm_0.66_1.00_0.01/92b798c32b2d61ae63a6a18a363cf316.png"/>
+          </a>
+          <a href = "https://www.twitter.com">
+            <img id = "img" class="redes" src="https://static.wixstatic.com/media/50d1c1ebf8315c89781859112ee73126.png"/>
+          </a>
+    </div>
+  </div>
+  <div id = "imagen_de_fondo"></div>
+  <div id="contenedor">
+    <div id="seccion1">
+      <div id = "tabla_video">
+        <p> VIDEO DE JUEGO DE TRONOS </p>
+        <iframe id = "video" src="https://www.youtube.com/embed/cIwpmwo7KWQ" frameborder="0" allowfullscreen></iframe>
+        <div>
+        <ul> Uno de los personajes de juego de tronos es <em> <%= personaje1 %> </em>. El se caracteriza por:
+          <li> Lord Jon Nieve es el <%= personaje2 %> de la Guardia de la Noche numero 998.</li>
+          <li> Es hijo bastardo de Lord <%= personaje3 %>.</li>
+          <li> Su lobo huargo, Fantasma, es albino y mudo.</li>
+          <li> Su emblema personal tienelos colores de la Casa Stark invertidos.</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div id="seccion2">
+      <div id = "sobre_mi"> Sobre <%= name %> </div>
+      <div>
+        <div id="img-contenedor">
+        <img id = "img" src = "http://www.dzoom.org.es/wp-content/uploads/2013/10/focalParaRetrato-PlanoDetalle.jpg" alt="" />
+        </div>
+        <p  class = "parrafada"> Parrafada sobre <%= name %></p>
+        <p  class = "parrafada"> Parrafada sobre <%= name %></p>
+        <p  class = "parrafada"> Parrafada sobre <%= name %></p>
+      </div>
+      <div id = "enlace">
+			  <a href="https://www.facebook.com/"> Leer &nbsp mas!</a>
+	  	</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p id = "pie"> Pagina creada por Francis</p>
+    <hr size = 5 noshade> <!-- Muestra 1 línea que ocupa todo el ancho, de 5 de alto -->
+  </div>
+</body>
+</html>
